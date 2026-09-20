@@ -2,139 +2,74 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>CV </title>
+<title>Francesco Poncina - CV</title>
 <style>
-body { font-family: Arial, sans-serif; background: #f0f2f5; color: #2c3e50; margin:0; padding:0; }
-.cv-container { max-width: 850px; margin: 30px auto; background: #fff; display: flex; box-shadow: 0 10px 40px rgba(0,0,0,0.15); min-height: 1100px; }
-.sidebar { width: 34%; background: linear-gradient(160deg, #0f2c4c, #1c4e80); color: #fff; padding: 40px 25px; }
-.photo-wrapper { width: 150px; height: 150px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 4px solid rgba(255,255,255,0.4); margin: 0 auto 25px auto; display: flex; align-items: center; justify-content: center; overflow: hidden; font-size: 12px; text-align: center; color: rgba(255,255,255,0.7); }
-.photo-wrapper img { width: 100%; height: 100%; object-fit: cover; }
-.sidebar h1 { font-size: 22px; text-align: center; margin-bottom: 4px; font-weight: 600; }
-.sidebar .role { text-align: center; font-size: 13px; color: #9fc6e8; margin-bottom: 30px; letter-spacing: 0.5px; }
-.side-section { margin-bottom: 28px; }
-.side-section h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #9fc6e8; border-bottom: 1px solid rgba(255,255,255,0.25); padding-bottom: 6px; margin-bottom: 12px; }
-.contact-item { display: flex; align-items: center; margin-bottom: 10px; font-size: 13px; word-break: break-all; color: #e6eef5; }
-.contact-item .icon { margin-right: 8px; font-size: 14px; }
-.skill-bar { margin-bottom: 12px; }
-.skill-name { font-size: 13px; margin-bottom: 4px; display: flex; justify-content: space-between; color: #e6eef5; }
-.skill-track { background: rgba(255,255,255,0.2); border-radius: 10px; height: 6px; overflow: hidden; }
-.skill-fill { background: #4fc3f7; height: 100%; border-radius: 10px; }
-.tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
-.tag { background: rgba(255,255,255,0.15); padding: 5px 10px; border-radius: 20px; font-size: 12px; color: #fff; }
-.main { width: 66%; padding: 45px 40px; }
-.main-section { margin-bottom: 32px; }
-.main-section h2 { font-size: 17px; color: #1c4e80; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; position: relative; padding-bottom: 8px; }
-.main-section h2::after { content: ''; position: absolute; left: 0; bottom: 0; width: 45px; height: 3px; background: #4fc3f7; border-radius: 2px; }
-.profile-text { font-size: 14px; line-height: 1.7; color: #444; text-align: justify; }
-.entry { margin-bottom: 20px; padding-left: 18px; border-left: 2px solid #e0e6ed; position: relative; }
-.entry::before { content: ''; position: absolute; left: -6px; top: 4px; width: 10px; height: 10px; border-radius: 50%; background: #4fc3f7; }
-.entry-title { font-size: 14.5px; font-weight: 600; color: #1c2b3a; margin-bottom: 3px; }
-.entry-subtitle { font-size: 12.5px; color: #1c4e80; font-weight: 600; margin-bottom: 6px; }
-.entry-desc { font-size: 13px; line-height: 1.6; color: #555; text-align: justify; }
-.entry-desc a { color: #1c4e80; font-weight: 600; }
-.award-box { background: #f4f9fd; border-left: 4px solid #4fc3f7; padding: 12px 16px; border-radius: 6px; font-size: 13px; color: #333; }
-@media print { body { background: #fff; } .cv-container { box-shadow: none; margin: 0; } }
+  body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#222; }
+  .container { max-width: 850px; margin: 30px auto; background:#fff; box-shadow:0 0 15px rgba(0,0,0,0.1); border-radius:8px; overflow:hidden; }
+  header { background:#1a2a4a; color:#fff; display:flex; align-items:center; padding:30px; gap:25px; }
+  header img { width:130px; height:130px; object-fit:cover; border-radius:50%; border:4px solid #fff; }
+  header .info h1 { margin:0; font-size:28px; }
+  header .info p { margin:5px 0 0; font-size:15px; color:#d0d6e2; }
+  section { padding:20px 30px; }
+  h2 { color:#1a2a4a; border-bottom:2px solid #1a2a4a; padding-bottom:5px; font-size:18px; }
+  .contacts { display:flex; flex-wrap:wrap; gap:15px; font-size:14px; margin-top:10px; }
+  ul { padding-left:20px; }
+  .skills span { display:inline-block; background:#1a2a4a; color:#fff; padding:5px 12px; border-radius:20px; margin:4px; font-size:13px; }
 </style>
 </head>
 <body>
-<div class="cv-container">
-  <div class="sidebar">
-    <div class="photo-wrapper">
-      <img src="INSERISCI_LINK_FOTO.jpg" alt="Foto" onerror="this.style.display='none'; this.parentElement.innerText='FOTO';">
-    </div>
-    <h1>Francesco Poncina</h1>
-    <div class="role">Studente | Liceo Scientifico</div>
-    <div class="side-section">
-      <h3>Contatti</h3>
-      <div class="contact-item"><span class="icon">Email:</span> poncina.help@gmail.com</div>
-      <div class="contact-item"><span class="icon">Tel:</span> +39 377 097 2012</div>
-      <div class="contact-item"><span class="icon">Città:</span> Torino, Italia</div>
-    </div>
-    <div class="side-section">
-      <h3>Lingue</h3>
-      <div class="skill-bar">
-        <div class="skill-name"><span>Italiano</span><span>Madrelingua</span></div>
-        <div class="skill-track"><div class="skill-fill" style="width:100%"></div></div>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-name"><span>Inglese</span><span>B2</span></div>
-        <div class="skill-track"><div class="skill-fill" style="width:70%"></div></div>
+<div class="container">
+  <header>
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCv/AAD8AT0nH/2wBDAQoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoK/8AAEQgArgCWAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A/f6iiigD/9k=" alt="Francesco Poncina">
+    <div class="info">
+      <h1>Francesco Poncina</h1>
+      <p>Profilo professionale</p>
+      <div class="contacts">
+        <span>📧 email@esempio.com</span>
+        <span>📱 +39 000 000 0000</span>
+        <span>📍 Italia</span>
       </div>
     </div>
-    <div class="side-section">
-      <h3>Competenze</h3>
-      <div class="tag-list">
-        <span class="tag">Problem Solving</span>
-        <span class="tag">Sviluppo Web</span>
-        <span class="tag">Matematica</span>
-        <span class="tag">Lavoro di Squadra</span>
-        <span class="tag">Public Speaking</span>
-      </div>
+  </header>
+
+  <section>
+    <h2>Profilo</h2>
+    <p>Persona motivata e curiosa, con attitudine all'apprendimento continuo e forte interesse verso ambiti tecnici e creativi. Predisposizione al lavoro di squadra e capacità di adattamento a contesti diversi.</p>
+  </section>
+
+  <section>
+    <h2>Formazione</h2>
+    <ul>
+      <li><strong>Diploma / Percorso di studi</strong> — Istituto, Anno di conseguimento</li>
+      <li><strong>Corsi e certificazioni</strong> — Dettagli da inserire</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Esperienze</h2>
+    <ul>
+      <li><strong>Ruolo / Attività</strong> — Ente/Azienda, Periodo</li>
+      <li><strong>Ruolo / Attività</strong> — Ente/Azienda, Periodo</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Competenze</h2>
+    <div class="skills">
+      <span>Lavoro di squadra</span>
+      <span>Problem solving</span>
+      <span>Comunicazione</span>
+      <span>Organizzazione</span>
     </div>
-    <div class="side-section">
-      <h3>Sport</h3>
-      <div class="tag-list">
-        <span class="tag">Nuoto</span>
-        <span class="tag">Judo</span>
-        <span class="tag">Calcio</span>
-        <span class="tag">Palestra</span>
-        <span class="tag">Arrampicata</span>
-      </div>
-    </div>
-    <div class="side-section">
-      <h3>Interessi</h3>
-      <div class="tag-list">
-        <span class="tag">Videogiochi</span>
-        <span class="tag">Motociclismo</span>
-        <span class="tag">Lettura</span>
-        <span class="tag">Pesca</span>
-      </div>
-    </div>
-  </div>
-  <div class="main">
-    <div class="main-section">
-      <h2>Profilo</h2>
-      <p class="profile-text">Studente al quinto anno di Liceo Scientifico con ottimo rendimento accademico, in particolare nelle materie scientifiche. Curioso, motivato e con forte propensione al problem solving. Ho maturato esperienze di crescita personale attraverso progetti internazionali, attività di volontariato educativo e sport, sviluppando autonomia, capacità organizzative e attitudine al lavoro di squadra. Appassionato di tecnologia, ho sviluppato in autonomia una web-app dedicata al mondo della pesca.</p>
-    </div>
-    <div class="main-section">
-      <h2>Istruzione</h2>
-      <div class="entry">
-        <div class="entry-title">Liceo Scientifico Carlo Cattaneo, Torino</div>
-        <div class="entry-subtitle">Quinto anno — Diploma previsto [2027]</div>
-        <div class="entry-desc">Ottimo rendimento scolastico, con particolare eccellenza nelle discipline scientifiche (matematica, fisica).</div>
-      </div>
-    </div>
-    <div class="main-section">
-      <h2>Progetti</h2>
-      <div class="entry">
-        <div class="entry-title">CatchMate – Web App per Pescatori</div>
-        <div class="entry-subtitle">Progetto personale, in fase di test</div>
-        <div class="entry-desc">Ideazione e sviluppo di una web-app dedicata agli appassionati di pesca, nata dalla passione personale per questa attività. Il progetto mi ha permesso di applicare in modo pratico logica, problem solving e capacità di sviluppo software.<br><a href="https://catchmate-app.vercel.app/" target="_blank">catchmate-app.vercel.app</a></div>
-      </div>
-    </div>
-    <div class="main-section">
-      <h2>Esperienze</h2>
-      <div class="entry">
-        <div class="entry-title">Animatore per bambini</div>
-        <div class="entry-subtitle">Scuola elementare e media — 3 anni</div>
-        <div class="entry-desc">Ho svolto attività di animazione ludico-educativa per bambini della scuola elementare e media presso l'istituto Francesco Faà di Bruno di Torino, dopo aver frequentato un corso di formazione psico-pedagogica dedicato al ruolo dell'animatore. Questa esperienza mi ha permesso di sviluppare capacità comunicative, gestione di gruppi, pazienza e responsabilità.</div>
-      </div>
-      <div class="entry">
-        <div class="entry-title">Erasmus Plus – Germania</div>
-        <div class="entry-subtitle">Scambio interculturale — Tema: Vita all'aria aperta</div>
-        <div class="entry-desc">Esperienza di scambio finanziata dall'Unione Europea, incentrata su attività outdoor e sostenibilità ambientale. Ha rappresentato un'importante occasione di crescita personale, confronto interculturale e sviluppo dell'autonomia in un contesto internazionale.</div>
-      </div>
-      <div class="entry">
-        <div class="entry-title">Erasmus Plus – Norvegia</div>
-        <div class="entry-subtitle">Scambio interculturale — Tema: Dialogo politico</div>
-        <div class="entry-desc">Progetto europeo dedicato al confronto su temi di cittadinanza attiva e dialogo politico tra giovani provenienti da diversi paesi. L'esperienza mi ha permesso di ampliare la visione critica sui temi sociali e politici europei, oltre a rafforzare le mie competenze comunicative in lingua inglese e la capacità di lavorare in team multiculturali.</div>
-      </div>
-    </div>
-    <div class="main-section">
-      <h2>Riconoscimenti</h2>
-      <div class="award-box">Olimpiadi di Matematica (fase Licei di Torino) — Primo premio conseguito come istituto, in rappresentanza del Liceo Scientifico Carlo Cattaneo.</div>
-    </div>
-  </div>
+  </section>
+
+  <section>
+    <h2>Lingue</h2>
+    <ul>
+      <li>Italiano — Madrelingua</li>
+      <li>Inglese — Livello da specificare</li>
+    </ul>
+  </section>
 </div>
 </body>
 </html>
