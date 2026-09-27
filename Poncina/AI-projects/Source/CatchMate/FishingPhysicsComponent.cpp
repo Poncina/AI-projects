@@ -76,7 +76,7 @@ void UFishingPhysicsComponent::CalculateLineTension(float DeltaTime)
 	float FishTension = 0.0f;
 
 	// Effetto della stamina: un pesce stanco (Stamina bassa) tira meno.
-	FishTension += (1.0f - CurrentFishStamina) * FishStaminaEffect; // Più stamina bassa, più tira (fatica a scappare)
+	FishTension += CurrentFishStamina * FishStaminaEffect;
 
 	// Strattonate casuali del pesce (se sta attaccando)
 	if (bIsFishAttacking)
